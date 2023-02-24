@@ -1,0 +1,15 @@
+# Default values for devops-bookstore-api.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 3
+
+image:
+  
+  repository: 915615838915.dkr.ecr.eu-west-2.amazonaws.com/devops-bookstore-api
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+  containerPort: 5000
+  livenessProbe: /books
+  readinessProbe: /books

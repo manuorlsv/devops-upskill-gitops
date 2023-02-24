@@ -1,0 +1,2 @@
+The devops-bookshop-api is a Python Flask Restful application
+
